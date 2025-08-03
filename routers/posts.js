@@ -47,4 +47,14 @@ const posts = [
   },
 ];
 
-module.exports = posts;
+//Index
+router.get('/', (req, res) => {
+  res.send('Ecco tutti gli elementi');
+})
+
+//Show
+router.get('/:id', (req, res) => {
+  res.send(`Ecco l'elemento con id: ${req.params.id}`);
+})
+
+module.exports = router;
