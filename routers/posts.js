@@ -72,4 +72,9 @@ router.patch('/:id', (req, res) => {
   res.send(`Modifica parziale dell'elemento con id: ${req['params']['id']}`);
 })
 
+//Destroy
+router.delete('/:id', (req, res) => {
+  res.send(`Cancellazione dell'elemento con id: ${req['params']['id']}`);
+})
+
 module.exports = router;
