@@ -54,12 +54,17 @@ router.get('/', (req, res) => {
 
 //Show
 router.get('/:id', (req, res) => {
-  res.send(`Ecco l'elemento con id: ${req.params.id}`);
+  res.send(`Ecco l'elemento con id: ${req['params']['id']}`);
 })
 
 //Store
 router.post('/', (req, res) => {
   res.send('Creazione di un nuovo elemento');
+})
+
+//Update
+router.put('/:id', (req, res) => {
+  res.send(`Modifica intera dell'elemento con id: ${req['params']['id']}`);
 })
 
 module.exports = router;
