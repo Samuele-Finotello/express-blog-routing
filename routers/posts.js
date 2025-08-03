@@ -57,4 +57,9 @@ router.get('/:id', (req, res) => {
   res.send(`Ecco l'elemento con id: ${req.params.id}`);
 })
 
+//Store
+router.post('/', (req, res) => {
+  res.send('Creazione di un nuovo elemento');
+})
+
 module.exports = router;
