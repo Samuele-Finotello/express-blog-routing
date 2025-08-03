@@ -67,4 +67,9 @@ router.put('/:id', (req, res) => {
   res.send(`Modifica intera dell'elemento con id: ${req['params']['id']}`);
 })
 
+//Modify
+router.patch('/:id', (req, res) => {
+  res.send(`Modifica parziale dell'elemento con id: ${req['params']['id']}`);
+})
+
 module.exports = router;
