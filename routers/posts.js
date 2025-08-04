@@ -49,7 +49,7 @@ const posts = [
 
 //Index
 router.get('/', (req, res) => {
-  res.send('Ecco tutti gli elementi');
+  res.send(posts);
 })
 
 //Show
